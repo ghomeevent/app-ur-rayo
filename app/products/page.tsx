@@ -30,7 +30,7 @@ export default function ProductsPage() {
               <span>{PRODUCTS_PAGE_CONTENT.hero.badge}</span>
             </div>
 
-            <h1 className="text-3xl sm:text-5xl font-black tracking-tight">
+            <h1 className="font-display text-3xl sm:text-5xl font-black tracking-tight">
               {PRODUCTS_PAGE_CONTENT.hero.title}
             </h1>
 
@@ -63,7 +63,7 @@ export default function ProductsPage() {
       {/* Filter Tabs & Products Showcase Grid */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="space-y-1 text-center sm:text-left">
-          <h2 className="text-2xl sm:text-3.5xl font-black text-stone-900 dark:text-white tracking-tight">
+          <h2 className="font-display text-2xl sm:text-3.5xl font-black text-stone-900 dark:text-white tracking-tight">
             {PRODUCTS_PAGE_CONTENT.showcase.title}
           </h2>
           <p className="text-stone-600 dark:text-stone-400 text-xs sm:text-sm">

@@ -37,7 +37,7 @@ export default function AboutUsPage() {
               <span>{ABOUT_PAGE_CONTENT.hero.badge}</span>
             </div>
 
-            <h1 className="text-3xl sm:text-5xl font-black tracking-tight">
+            <h1 className="font-display text-3xl sm:text-5xl font-black tracking-tight">
               {ABOUT_PAGE_CONTENT.hero.title}
             </h1>
 
@@ -73,7 +73,7 @@ export default function AboutUsPage() {
               <span className="text-xs font-black uppercase tracking-widest text-lime-600 dark:text-lime-400 block">
                 {ABOUT_PAGE_CONTENT.difference.badge}
               </span>
-              <h2 className="text-2xl sm:text-3.5xl font-black text-stone-900 dark:text-white tracking-tight">
+              <h2 className="font-display text-2xl sm:text-3.5xl font-black text-stone-900 dark:text-white tracking-tight">
                 {ABOUT_PAGE_CONTENT.difference.title}
               </h2>
               <p className="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed">
@@ -106,7 +106,7 @@ export default function AboutUsPage() {
       {/* Core Values & Commitments */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
         <div className="text-center max-w-2xl mx-auto space-y-2">
-          <h2 className="text-2xl sm:text-3xl font-black text-stone-900 dark:text-white tracking-tight">
+          <h2 className="font-display text-2xl sm:text-3xl font-black text-stone-900 dark:text-white tracking-tight">
             {ABOUT_PAGE_CONTENT.commitments.title}
           </h2>
           <p className="text-stone-600 dark:text-stone-300 text-xs sm:text-sm">

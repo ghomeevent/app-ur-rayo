@@ -30,7 +30,7 @@ export default function ContactUsPage() {
           <Zap className="w-3.5 h-3.5 fill-current" />
           <span>{CONTACT_PAGE_CONTENT.header.badge}</span>
         </div>
-        <h1 className="text-3xl sm:text-5xl font-black text-stone-900 dark:text-white tracking-tight">
+        <h1 className="font-display text-3xl sm:text-5xl font-black text-stone-900 dark:text-white tracking-tight">
           {CONTACT_PAGE_CONTENT.header.title}
         </h1>
         <p className="text-stone-600 dark:text-stone-300 text-sm sm:text-base leading-relaxed">
@@ -47,7 +47,7 @@ export default function ContactUsPage() {
               <span className="text-xs font-extrabold uppercase tracking-widest text-lime-400 block mb-1">
                 {CONTACT_PAGE_CONTENT.leftCard.badge}
               </span>
-              <h2 className="text-xl sm:text-2xl font-black">
+              <h2 className="font-display text-xl sm:text-2xl font-black">
                 {CONTACT_PAGE_CONTENT.leftCard.title}
               </h2>
               <p className="text-xs text-stone-400 mt-0.5">

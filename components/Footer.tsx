@@ -74,7 +74,7 @@ export default function Footer() {
                 />
               </div>
               <div>
-                <span className="font-black text-xl text-white tracking-tight block">
+                <span className="font-display font-black text-xl text-white tracking-tight block">
                   {COMPANY_INFO.brandName.toUpperCase()} BATTERIES
                 </span>
                 <span className="text-[10px] text-lime-400 font-bold uppercase tracking-wider block">

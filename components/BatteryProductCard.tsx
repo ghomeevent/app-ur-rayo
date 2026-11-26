@@ -147,7 +147,9 @@ export default function BatteryProductCard({
 
             <div className="p-2.5 rounded-xl bg-stone-100 dark:bg-stone-800/70 border border-stone-200 dark:border-stone-800">
               <span className="text-stone-400 block text-[10px] uppercase font-semibold">
-                {PRODUCT_CARD_CONTENT.specsLabels.capacity}
+                {product.category === "charger"
+                  ? "Current Options"
+                  : PRODUCT_CARD_CONTENT.specsLabels.capacity}
               </span>
               <strong className="text-stone-900 dark:text-white font-bold">
                 {product.capacity}
@@ -156,7 +158,9 @@ export default function BatteryProductCard({
 
             <div className="p-2.5 rounded-xl bg-stone-100 dark:bg-stone-800/70 border border-stone-200 dark:border-stone-800">
               <span className="text-stone-400 block text-[10px] uppercase font-semibold">
-                {PRODUCT_CARD_CONTENT.specsLabels.chemistry}
+                {product.category === "charger"
+                  ? "Power Architecture"
+                  : PRODUCT_CARD_CONTENT.specsLabels.chemistry}
               </span>
               <strong className="text-stone-900 dark:text-white font-bold">
                 {product.cellChemistry}

@@ -42,7 +42,7 @@ export default function WhyRayoSection() {
             <ShieldCheck className="w-3.5 h-3.5" />
             <span>{WHY_RAYO_CONTENT.badge}</span>
           </div>
-          <h2 className="text-2xl sm:text-4xl font-black tracking-tight text-white">
+          <h2 className="font-display text-2xl sm:text-4xl font-black tracking-tight text-white">
             {WHY_RAYO_CONTENT.title}
           </h2>
           <p className="text-stone-300 text-sm sm:text-base leading-relaxed">

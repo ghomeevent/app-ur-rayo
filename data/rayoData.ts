@@ -106,7 +106,11 @@ export const COMPANY_INFO = {
   salesEmail: "sales@urbanridegreen.com",
   dealerEmail: "dealers@urbanridegreen.com",
   websiteUrl: "https://rayo.urbanridegreen.com",
-  parentWebsiteUrl: "https://www.urbanridegreen.com",
+  parentWebsiteUrl:
+    process.env.NEXT_PUBLIC_URBAN_RIDE_URL ||
+    (process.env.NODE_ENV === "development"
+      ? "http://localhost:3000"
+      : "https://www.urbanridegreen.com"),
   address: "Hyderabad & Karimnagar, Telangana, India",
   primaryAddress: "Urban Ride Green Motors, Dairy Complex, Padmanagar, Ramnagar, Karimnagar, Telangana 505001",
   secondaryAddress: "H.No. 4-163, Road No. 7, RTC Colony, Chengicherla, Hyderabad, Telangana 500092",

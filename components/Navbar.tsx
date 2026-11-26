@@ -9,6 +9,7 @@ import { COMPANY_INFO } from "@/data/rayoData";
 import { SITE_CONFIG } from "@/data/siteConfig";
 import { NAVBAR_CONTENT } from "@/data/siteContent";
 import ThemeToggle from "./ThemeToggle";
+import BrandSwitcherBar from "./BrandSwitcherBar";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,35 +42,8 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Top Notification Announcement Bar */}
-      <div className="bg-[#050505] text-stone-300 text-xs py-1.5 px-4 border-b border-lime-950/40 hidden sm:block">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="inline-flex items-center gap-1.5 font-bold text-lime-400">
-              <span className="w-2 h-2 rounded-full bg-lime-400 animate-pulse"></span>
-              {NAVBAR_CONTENT.announcement.brandSubtitle}
-            </span>
-            <span className="text-stone-700">|</span>
-            <span className="text-stone-300 font-medium">
-              {NAVBAR_CONTENT.announcement.poweredBy}
-            </span>
-            <span className="text-stone-700">|</span>
-            <span className="text-stone-400">
-              {NAVBAR_CONTENT.announcement.specRange}
-            </span>
-          </div>
-          <div className="flex items-center gap-4">
-            <span className="text-stone-400">{COMPANY_INFO.registeredName}</span>
-            <span className="text-stone-700">|</span>
-            <a
-              href={`tel:${COMPANY_INFO.phone}`}
-              className="font-bold text-lime-400 hover:text-white transition-colors"
-            >
-              {NAVBAR_CONTENT.announcement.hotlineLabel} {COMPANY_INFO.formattedPhone}
-            </a>
-          </div>
-        </div>
-      </div>
+      {/* Ecosystem Brand Switcher Bar */}
+      <BrandSwitcherBar activeSite="rayo" />
 
       {/* Main Sticky Glass Header */}
       <header
@@ -94,7 +68,7 @@ export default function Navbar() {
             {/* RAYO Wordmark */}
             <div className="flex flex-col">
               <div className="flex items-baseline gap-1.5">
-                <span className="font-black text-xl sm:text-2xl tracking-tighter text-stone-900 dark:text-white group-hover:text-lime-500 transition-colors leading-none">
+                <span className="font-display font-black text-xl sm:text-2xl tracking-tighter text-stone-900 dark:text-white group-hover:text-lime-500 transition-colors leading-none">
                   {NAVBAR_CONTENT.brand.brandName}
                 </span>
                 <span className="text-[10px] font-black uppercase tracking-widest text-lime-600 dark:text-lime-400 bg-lime-500/10 px-1.5 py-0.5 rounded">

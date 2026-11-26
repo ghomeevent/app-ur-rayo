@@ -71,7 +71,7 @@ export default function HomePage() {
 
               {/* Headings */}
               <div className="space-y-2">
-                <h1 className="text-3xl sm:text-5xl lg:text-5.5xl font-black text-stone-900 dark:text-white tracking-tight leading-[1.12]">
+                <h1 className="font-display text-3xl sm:text-5xl lg:text-5.5xl font-black text-stone-900 dark:text-white tracking-tight leading-[1.12]">
                   {HOME_CONTENT.hero.titlePrefix}{" "}
                   <span className="bg-gradient-to-r from-lime-600 via-lime-500 to-emerald-500 bg-clip-text text-transparent">
                     {HOME_CONTENT.hero.titleHighlight}
@@ -205,7 +205,7 @@ export default function HomePage() {
             <Zap className="w-3.5 h-3.5 fill-current" />
             <span>{HOME_CONTENT.showcaseHeader.badge}</span>
           </div>
-          <h2 className="text-2xl sm:text-4xl font-black text-stone-900 dark:text-white tracking-tight">
+          <h2 className="font-display text-2xl sm:text-4xl font-black text-stone-900 dark:text-white tracking-tight">
             {HOME_CONTENT.showcaseHeader.title}
           </h2>
           <p className="text-stone-600 dark:text-stone-300 text-sm sm:text-base leading-relaxed">
@@ -241,7 +241,7 @@ export default function HomePage() {
                 <Zap className="w-3.5 h-3.5" />
                 <span>{HOME_CONTENT.chargerSpotlight.badge}</span>
               </div>
-              <h3 className="text-2xl sm:text-3xl font-black text-white">
+              <h3 className="font-display text-2xl sm:text-3xl font-black text-white">
                 {HOME_CONTENT.chargerSpotlight.title}
               </h3>
               <p className="text-xs sm:text-sm text-stone-300 leading-relaxed">
@@ -319,7 +319,7 @@ export default function HomePage() {
             <span className="text-xs font-black uppercase tracking-widest text-lime-400">
               {HOME_CONTENT.bottomCta.badge}
             </span>
-            <h2 className="text-2xl sm:text-4xl font-black tracking-tight">
+            <h2 className="font-display text-2xl sm:text-4xl font-black tracking-tight">
               {HOME_CONTENT.bottomCta.title}
             </h2>
             <p className="text-stone-300 text-sm sm:text-base leading-relaxed">
