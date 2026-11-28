@@ -11,13 +11,13 @@ const URBAN_RIDE_URL =
   process.env.NEXT_PUBLIC_URBAN_RIDE_URL ||
   (process.env.NODE_ENV === "development"
     ? "http://localhost:3000"
-    : "https://www.urbanridegreen.com");
+    : "https://app-ur-urbanride.vercel.app");
 
 const RAYO_URL =
   process.env.NEXT_PUBLIC_RAYO_URL ||
   (process.env.NODE_ENV === "development"
     ? "http://localhost:3001"
-    : "https://rayo.urbanridegreen.com");
+    : "https://app-ur-rayo.vercel.app");
 
 export default function BrandSwitcherBar({ activeSite }: BrandSwitcherBarProps) {
   const isUrbanRide = activeSite === "urban-ride";
