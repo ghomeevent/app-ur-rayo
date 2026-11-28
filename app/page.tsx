@@ -71,7 +71,7 @@ export default function HomePage() {
 
               {/* Headings */}
               <div className="space-y-2">
-                <h1 className="font-display text-3xl sm:text-5xl lg:text-5.5xl font-black text-stone-900 dark:text-white tracking-tight leading-[1.12]">
+                <h1 className="font-display text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-black text-stone-900 dark:text-white tracking-tight leading-[1.12]">
                   {HOME_CONTENT.hero.titlePrefix}{" "}
                   <span className="bg-gradient-to-r from-lime-600 via-lime-500 to-emerald-500 bg-clip-text text-transparent">
                     {HOME_CONTENT.hero.titleHighlight}

@@ -73,7 +73,7 @@ export default function AboutUsPage() {
               <span className="text-xs font-black uppercase tracking-widest text-lime-600 dark:text-lime-400 block">
                 {ABOUT_PAGE_CONTENT.difference.badge}
               </span>
-              <h2 className="font-display text-2xl sm:text-3.5xl font-black text-stone-900 dark:text-white tracking-tight">
+              <h2 className="font-display text-2xl sm:text-4xl font-black text-stone-900 dark:text-white tracking-tight">
                 {ABOUT_PAGE_CONTENT.difference.title}
               </h2>
               <p className="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed">

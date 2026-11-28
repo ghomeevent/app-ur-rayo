@@ -17,7 +17,7 @@ export default function UrbanRidePosterSection() {
             <Bike className="w-3.5 h-3.5" />
             <span>{URBAN_RIDE_POSTER_CONTENT.badge}</span>
           </div>
-          <h2 className="font-display text-2xl sm:text-3.5xl font-black text-stone-900 dark:text-white tracking-tight">
+          <h2 className="font-display text-2xl sm:text-4xl font-black text-stone-900 dark:text-white tracking-tight">
             {URBAN_RIDE_POSTER_CONTENT.title}
           </h2>
           <p className="text-stone-600 dark:text-stone-400 text-xs sm:text-sm mt-0.5">

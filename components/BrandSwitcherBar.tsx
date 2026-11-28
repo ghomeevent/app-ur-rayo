@@ -7,26 +7,24 @@ interface BrandSwitcherBarProps {
   activeSite: "urban-ride" | "rayo";
 }
 
-// TODO (final live): restore https://www.urbanridegreen.com
 const URBAN_RIDE_URL =
   process.env.NEXT_PUBLIC_URBAN_RIDE_URL ||
   (process.env.NODE_ENV === "development"
     ? "http://localhost:3000"
-    : "https://app-ur-urbanride.vercel.app");
+    : "https://www.urbanridegreen.com");
 
-// TODO (final live): restore https://rayo.urbanridegreen.com
 const RAYO_URL =
   process.env.NEXT_PUBLIC_RAYO_URL ||
   (process.env.NODE_ENV === "development"
     ? "http://localhost:3001"
-    : "https://app-ur-rayo.vercel.app");
+    : "https://rayo.urbanridegreen.com");
 
 export default function BrandSwitcherBar({ activeSite }: BrandSwitcherBarProps) {
   const isUrbanRide = activeSite === "urban-ride";
 
   return (
     <div className="bg-[#050608] text-stone-300 border-b border-white/10 text-[11px] relative z-[60]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-9 flex items-center justify-between gap-3">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-10 sm:h-9 flex items-center justify-between gap-2 sm:gap-3">
         {/* Left: Ecosystem Indicator */}
         <div className="flex items-center gap-2 min-w-0">
           <span
@@ -34,7 +32,10 @@ export default function BrandSwitcherBar({ activeSite }: BrandSwitcherBarProps) 
               isUrbanRide ? "bg-emerald-400" : "bg-lime-400"
             }`}
           />
-          <span className="font-display font-bold tracking-wide text-white truncate">
+          <span className="font-display font-bold tracking-wide text-white truncate sm:hidden">
+            Urban Ride
+          </span>
+          <span className="hidden sm:inline font-display font-bold tracking-wide text-white truncate">
             Urban Ride Green Motors
           </span>
           <span className="hidden md:inline text-stone-600">•</span>
